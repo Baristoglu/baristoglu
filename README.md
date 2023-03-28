@@ -1,24 +1,54 @@
-## ICA MEETING ROOM IMPROVEMENTS
-If you have any questions getting this up and running, please feel free to submit an Issue or email me at baristoglu@gmail.com. 
+<div align="center">
+  <span align="center"> <img width="80" height="80" class="center" src="https://github.com/alainm23/planner/blob/master/data/icons/128/com.github.alainm23.planner.svg" alt="Icon"></span>
+  <h1 align="center">Task Planner</h1>
+  <h3 align="center">Never worry about forgetting things again</h3>
+</div>
 
-### Getting Started
-If you haven't already, install git and node.js on your device.
+![Planner Screenshot](https://github.com/alainm23/planner/raw/master/data/screenshot/screenshot-01.png)
 
-1. Fork or clone this repository onto your device. 
-2. In your console, run `npm install` to install the required components.
-3. Run `touch .env` to create your hidden, gitignored environment config file.
-4. In .env, configure your environment as follows:
-    * `DEV=`  `TRUE` if you are on desktop, or `FALSE` if you are on your raspberry pi
-    * `PORT=` `8000` for development, `80` or `443` for HTTP or HTTPS
-    * `PASS=` Whatever you want your password to be
-5. Run `npm start` to launch the server
+## Task Planner is here...
 
-When you make a POST request to the server, follow this structure: 
-`http://ipaddresshere/API/switches/sw1?password=yourpasswordhere`
+- 🚀️ Neat visual style.
+- 🤚️ Drag and Order: Sort your tasks wherever you want.
+- 💯️ Progress indicator for each project.
+- 💪️ Be more productive and organize your tasks by 'Sections'.
+- 📅️ Visualize your events and plan your day better.
+- ⏲️ Reminder system, you can create one or more reminders, you decide.
+- 🌙️ Better integration with the dark theme.
+- 🎉️ and much more.
 
-### Next Steps
-You will want to configure the Python files to suit your project's needs. 
+### ☁️ Support for Todoist:
 
-To add or edit a switch, go into saveState.json. Use the first switch as a guide, and add a new object to the switches array. 
+- Synchronize your Projects, Task and Sections thanks to Todoist.
+- Support for Todoist offline: Work without an internet connection and when everything is reconnected it will be synchronized.
+- Planner not created by, affiliated with, or supported by Doist
 
-You can serve your own frontend out of the public folder, and it will be accessible on the root route if you make a get request to your IP address. 
+### 💎️ Other features:
+
+- ⏲️ Reminders notifications.
+- 🔍️ Quick Find.
+- 🌙️ Night mode.
+- 🔁️ Recurring due dates.
+
+## Building
+
+You'll need the following dependencies:
+
+* gtk4
+* libadwaita
+
+Run `meson build` to configure the build environment. Change to the build directory and run `ninja` to build
+
+    meson build --prefix=/usr
+    cd build
+    ninja
+
+To install, use `ninja install`, then execute with `com.github.alainm23.task-planner`
+
+    sudo ninja install
+    com.github.alainm23.task-planner
+
+## Support
+If you like Planner and you want to support its development, consider supporting via [Patreon](https://www.patreon.com/alainm23), [PayPal](https://www.paypal.me/alainm23) or [Liberapay](https://liberapay.com/Alain)
+
+Made with 💗 in Perú
